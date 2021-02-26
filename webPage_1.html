@@ -3,6 +3,20 @@
     <head>
         <title>Worrior</title>
         <link rel = "stylesheet" href="webPage_1.css" type="text/css">
+        <script>
+            function login(){
+                document.getElementById("span").style.marginLeft  =  "165px";
+                document.getElementById("span").style.width =  "80px";
+                document.getElementById("singin").style.display =  "none";
+                document.getElementById("log").style.display =  "block";
+            }
+            function singin(){
+                document.getElementById("span").style.marginLeft  =  "40px";
+                document.getElementById("span").style.width =  "90px";
+                document.getElementById("singin").style.display =  "block";
+                document.getElementById("log").style.display =  "none";
+            }
+        </script>
     </head>
     <body>
         <div id = "main">
@@ -42,9 +56,9 @@
                 <div class = "loginPlace">
                     
                     <ul>
-                        <li><a href = "#">Sing in</a></li>
-                        <li><a href = "#">Login</a></li>
-                        <span></span>
+                        <li><a href = "#" onclick="singin()">Sing in</a></li>
+                        <li><a href = "#" onclick = "login()">Login</a></li>
+                        <span  id = "span"></span>
                    
                     <div id = "singin">
                         <input class = "name" type = "text" placeholder="Name" value = "" >

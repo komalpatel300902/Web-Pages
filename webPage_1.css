@@ -127,16 +127,7 @@ body{
     margin-left: 40px;
     transition: .5s;
 }
-.loginPlace ul li:nth-child(1):hover ~ span{
-    width: 90px;
-    margin-left: 40px ;
 
-}
-.loginPlace ul li:nth-child(2):hover ~ span{
-    width: 80px;
-    margin-left: 165px ;
-
-}
 
 .name,.email{
     

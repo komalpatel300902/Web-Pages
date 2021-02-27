@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>
+            Worrior
+        </title>
+        <link rel = "stylesheet" href="singInLoginPage.css" type = "text/css">
+
+     
+    </head>
+    <body>
+        <script>
+            function log(){
+                document.getElementById("span").style.marginLeft = "140px"
+                document.getElementById("span").style.width = "82px"
+                document.getElementById("login").style.display = "block"
+                document.getElementById("singin").style.display = "none"
+
+            }
+
+            function sing(){
+                document.getElementById("span").style.marginLeft = "10px"
+                document.getElementById("span").style.width = "100px"
+                document.getElementById("login").style.display = "none"
+                document.getElementById("singin").style.display = "block"
+
+            }
+            function submit(){
+                document.getElementById("fname").value = ""
+                document.getElementById("lname").value = ""
+                document.getElementById("email").value = ""
+                document.getElementById("password").value = ""
+                document.getElementById("check").checked = false
+            }
+            function sub(){
+                document.getElementById("passwd").value = ""
+                document.getElementById("ema").value = ""
+                document.getElementById("chk").checked = false
+            }
+        </script>
+        <div id = "main">
+            <ul>
+                <li onclick = "sing()"><a href = "#">Sing In</a></li>
+                <li onclick="log()"><a href = "#">Login</a></li>
+                <span id = "span"></span>
+
+            </ul>
+            <div class = "singin" id = "singin">
+                <label class = "id lable">Please fillup the form and create an Account !</label>
+                <input id = "fname" class = "id firstname" type="text" placeholder="Frist Name" value = "">
+                <input id = "lname" class = "id lastname" type="text" placeholder="Last Name" value = "">
+                <input id = "email" class = "id email" type = "email" placeholder="xyz@gmail.com" value = "">
+                <input id = "password" class = "id password" type="password" placeholder = "Password" value = "">
+                <input id = "check" type = "checkbox" class = "check" ><label class = "lab" >I Agree All Terms And Condition !</label>
+                <input type = "button" value = "Submit"  class = "id submit" onclick="submit()">
+            </div>
+            <div class = "login" id = "login">
+                <lable class = "lab log">Login Portal </lable>
+                <input id = "ema" class = "id email" type = "email" placeholder="xyz@gmail.com" value = "">
+                <input id = "passwd" class = "id password" type="password" placeholder = "Password" value = "">
+                <input id = "chk" type = "checkbox" class = "check2" ><label class = "lab" >Remember  me</label>
+                <input type = "button" value = "Login"  class = "id submit" onclick="sub()">
+                
+            </div>
+        </div>
+    </body>
+</html>
